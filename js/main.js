@@ -13,5 +13,8 @@ document.getElementById('oblicz').addEventListener('click', function () {
         } else if (czas[i].defaultValue < 100) {
             document.getElementsByClassName('pracownik')[i].style.backgroundColor = 'red';
         }
-    }
+        var array = [];
+        array.push(parseInt(czas[i].defaultValue));
+    } 
+    console.log(array);
 });
